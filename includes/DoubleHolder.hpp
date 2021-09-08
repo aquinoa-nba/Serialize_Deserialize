@@ -4,20 +4,20 @@
 
 class DoubleHolder : public BaseHolder
 {
-	private:
-		double	_value;
+    private:
+        double    _value;
 
-	public:
+    public:
 /*    CONSTRUCTORS    */
-		DoubleHolder();
-		DoubleHolder(const double &);
-		DoubleHolder(const DoubleHolder &);
+        DoubleHolder();
+        DoubleHolder(const double &);
+        DoubleHolder(const DoubleHolder &);
 /*    DESTRUCTOR    */
-		~DoubleHolder();
+        ~DoubleHolder();
 /*    MEMBER FUNCTIONS    */
-		size_t	getTypeSize();
-		char*	getValueBytes();
-		void	printVal();
+        size_t    getTypeSize();
+        char*     getValueBytes();
+        void      printVal();
 /*    ASSIGNATION OPERATOR OVERLOAD    */
-		DoubleHolder&	operator = (const DoubleHolder &other);
+        DoubleHolder&    operator = (const DoubleHolder &other);
 };

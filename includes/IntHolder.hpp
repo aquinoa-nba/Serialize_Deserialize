@@ -4,20 +4,20 @@
 
 class IntHolder : public BaseHolder
 {
-	private:
-		int		_value;
+    private:
+        int        _value;
 
-	public:
+    public:
 /*    CONSTRUCTORS    */
-		IntHolder();
-		IntHolder(const int &);
-		IntHolder(const IntHolder &);
+        IntHolder();
+        IntHolder(const int &);
+        IntHolder(const IntHolder &);
 /*    DESTRUCTOR    */
-		~IntHolder();
+        ~IntHolder();
 /*    MEMBER FUNCTIONS    */
-		size_t	getTypeSize();
-		char*	getValueBytes();
-		void	printVal();
+        size_t    getTypeSize();
+        char*     getValueBytes();
+        void      printVal();
 /*    ASSIGNATION OPERATOR OVERLOAD    */
-		IntHolder&	operator = (const IntHolder &other);
+        IntHolder&    operator = (const IntHolder &other);
 };

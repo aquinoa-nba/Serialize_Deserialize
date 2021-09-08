@@ -8,20 +8,20 @@ DoubleHolder::DoubleHolder(const DoubleHolder &other) { *this = other; }
 
 DoubleHolder::~DoubleHolder() {}
 
-size_t	DoubleHolder::getTypeSize() { return sizeof(_value); }
+size_t    DoubleHolder::getTypeSize() { return sizeof(_value); }
 
-char*	DoubleHolder::getValueBytes()
+char*    DoubleHolder::getValueBytes()
 {
-	char*	bytes = new char[sizeof(_value)];
-	memcpy(bytes, &_value, sizeof(_value));
-	return bytes;
+    char*    bytes = new char[sizeof(_value)];
+    memcpy(bytes, &_value, sizeof(_value));
+    return bytes;
 }
 
-void	DoubleHolder::printVal() { std::cout << _value << std::endl; }
+void    DoubleHolder::printVal() { std::cout << _value << std::endl; }
 
-DoubleHolder&	DoubleHolder::operator = (const DoubleHolder &other)
+DoubleHolder&    DoubleHolder::operator = (const DoubleHolder &other)
 {
-	if (this != &other)
-		this->_value = other._value;
-	return *this;
+    if (this != &other)
+        this->_value = other._value;
+    return *this;
 }

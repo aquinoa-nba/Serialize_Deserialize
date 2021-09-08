@@ -8,20 +8,20 @@ IntHolder::IntHolder(const IntHolder &other) { *this = other; }
 
 IntHolder::~IntHolder() {}
 
-size_t	IntHolder::getTypeSize() { return sizeof(_value); }
+size_t    IntHolder::getTypeSize() { return sizeof(_value); }
 
-char*	IntHolder::getValueBytes()
+char*    IntHolder::getValueBytes()
 {
-	char	*bytes = new char[sizeof(_value)];
-	memcpy(bytes, &_value, sizeof(_value));
-	return bytes;
+    char    *bytes = new char[sizeof(_value)];
+    memcpy(bytes, &_value, sizeof(_value));
+    return bytes;
 }
 
-void	IntHolder::printVal() { std::cout << _value << std::endl; }
+void    IntHolder::printVal() { std::cout << _value << std::endl; }
 
-IntHolder&	IntHolder::operator = (const IntHolder &other)
+IntHolder&    IntHolder::operator = (const IntHolder &other)
 {
-	if (this != &other)
-		this->_value = other._value;
-	return *this;
+    if (this != &other)
+        this->_value = other._value;
+    return *this;
 }

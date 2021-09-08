@@ -4,20 +4,20 @@
 
 class CharArrayHolder : public BaseHolder
 {
-	private:
-		char	_value[10];
+    private:
+        char    _value[10];
 
-	public:
+    public:
 /*    CONSTRUCTORS    */
-		CharArrayHolder();
-		CharArrayHolder(const char *);
-		CharArrayHolder(const CharArrayHolder &);
+        CharArrayHolder();
+        CharArrayHolder(const char *);
+        CharArrayHolder(const CharArrayHolder &);
 /*    DESTRUCTOR    */
-		~CharArrayHolder();
+        ~CharArrayHolder();
 /*    MEMBER FUNCTIONS    */
-		size_t	getTypeSize();
-		char*	getValueBytes();
-		void	printVal();
+        size_t    getTypeSize();
+        char*     getValueBytes();
+        void      printVal();
 /*    ASSIGNATION OPERATOR OVERLOAD    */
-		CharArrayHolder&	operator = (const CharArrayHolder &);
+        CharArrayHolder&    operator = (const CharArrayHolder &);
 };
