@@ -29,7 +29,7 @@ void    delete_tree(const node &root)
         delete_tree(*root.branches[i]);                  //    recursive fall to the next node
         delete root.branches[i];                         //    free node ptr
     }
-    delete root.value;                                   // free Holder ptr
+    delete root.value;                                   //    free Holder ptr
 }
 
 void    error(const std::string &err_str)
