@@ -1,4 +1,4 @@
-# Serializing_n_Deserializing_tree_of_pointers
+# Serialize_Deserialize
 
 Cохранение и восстановление дерева указателей.<br>
 
