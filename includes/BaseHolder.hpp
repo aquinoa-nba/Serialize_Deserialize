@@ -12,5 +12,5 @@ class BaseHolder
 /*    MEMBER FUNCTIONS    */
         virtual    size_t    getTypeSize() = 0;
         virtual    char*     getValueBytes() = 0;
-        virtual void         printVal() = 0;
+        virtual    void      printVal() = 0;
 };
