@@ -1,0 +1,9 @@
+.obj/
+serialize
+deserialize
+test
+serialized_data.txt
+.vscode/
+serialize.dSYM/
+deserialize.dSYM/
+test.dSYM/
