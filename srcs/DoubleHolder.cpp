@@ -8,8 +8,6 @@ DoubleHolder::DoubleHolder(const DoubleHolder &other) { *this = other; }
 
 DoubleHolder::~DoubleHolder() {}
 
-size_t    DoubleHolder::getTypeSize() { return sizeof(_value); }
-
 char*    DoubleHolder::getValueBytes()
 {
     char*    bytes = new char[sizeof(_value)];

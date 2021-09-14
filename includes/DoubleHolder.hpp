@@ -15,7 +15,6 @@ class DoubleHolder : public BaseHolder
 /*    DESTRUCTOR    */
         ~DoubleHolder();
 /*    MEMBER FUNCTIONS    */
-        size_t    getTypeSize();
         char*     getValueBytes();
         void      printVal();
 /*    ASSIGNATION OPERATOR OVERLOAD    */

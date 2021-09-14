@@ -15,7 +15,6 @@ class IntHolder : public BaseHolder
 /*    DESTRUCTOR    */
         ~IntHolder();
 /*    MEMBER FUNCTIONS    */
-        size_t    getTypeSize();
         char*     getValueBytes();
         void      printVal();
 /*    ASSIGNATION OPERATOR OVERLOAD    */

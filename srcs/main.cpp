@@ -2,11 +2,16 @@
 
 void    serialize(const node &root, std::ofstream &f_out)
 {
-    size_t   type_size;
+    size_t   type_size = 0;                              //    type of Holder's value
     char     *value;
     size_t   branch_count;
 
-    type_size = root.value->getTypeSize();               //    type of Holder's value
+    if (dynamic_cast<IntHolder*>(root.value))
+        type_size = sizeof(int);
+    else if (dynamic_cast<CharArrayHolder*>(root.value))
+        type_size = sizeof(char[10]);
+    else if (dynamic_cast<DoubleHolder*>(root.value))
+        type_size = sizeof(double);
     value = root.value->getValueBytes();                 //    Holder's value
     f_out.write((char*)&type_size, sizeof(size_t));      //    keeping value type size
     f_out.write(value, type_size);                       //    keeping value

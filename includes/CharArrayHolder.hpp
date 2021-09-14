@@ -15,7 +15,6 @@ class CharArrayHolder : public BaseHolder
 /*    DESTRUCTOR    */
         ~CharArrayHolder();
 /*    MEMBER FUNCTIONS    */
-        size_t    getTypeSize();
         char*     getValueBytes();
         void      printVal();
 /*    ASSIGNATION OPERATOR OVERLOAD    */

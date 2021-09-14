@@ -12,8 +12,6 @@ CharArrayHolder::CharArrayHolder(const CharArrayHolder &other) { *this = other; 
 
 CharArrayHolder::~CharArrayHolder() {}
 
-size_t    CharArrayHolder::getTypeSize() { return sizeof(_value); };
-
 char*    CharArrayHolder::getValueBytes()
 {
     char*    bytes = new char[10];

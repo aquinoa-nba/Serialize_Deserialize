@@ -8,8 +8,6 @@ IntHolder::IntHolder(const IntHolder &other) { *this = other; }
 
 IntHolder::~IntHolder() {}
 
-size_t    IntHolder::getTypeSize() { return sizeof(_value); }
-
 char*    IntHolder::getValueBytes()
 {
     char    *bytes = new char[sizeof(_value)];
